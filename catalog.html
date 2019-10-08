@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Nerds catalog</title>
+</head>
+<body>
+	<header class="header-main">
+		<div class="container">
+			<div class="head-top">			
+				<nav class="main-navigation">
+					<ul>
+						<li>
+							<a class="logo logo__current" href="index.html">
+								<img class="logo__image" src="img/logo.jpg" alt="logo" width="100" height="100">
+							</a>
+						</li>
+						<li><a href="#">Studio</a></li>
+						<li><a href="#">Clients</a></li>
+						<li><a href="#">Catalog</a></li>
+						<li><a href="#">Contacts</a></li>
+					</ul>
+				</nav>
+				<div class="head-cart">
+					<a href="#" class="cart">Cart</a>
+				</div>			
+			</div>	
+			<h1 class=head-title_text>Weclome to our market</h1>
+		</div>
+	</header>
+
+
+	<main class="main">	
+
+		<div class="container">
+			<form action="post" class="catalog-form">
+				<fieldset class="catalog-field">
+  				<legend class="catalog-legend">Price</legend>
+					<input type="range" id="range-price" name="range-price" min="0" max="25000" step="1000">
+					<label>from <input type="text" name="price_start"></label>
+					<label>to <input type="text" name="price_end"></label>
+				</fieldset>
+				<fieldset class="catalog-field">
+  				<legend class="catalog-legend">Form</legend>
+  				<label><input type="radio" name="radio" value="adapt"> Adaptive</label>
+  				<label><input type="radio" name="radio" value="fixed"> Fixed</label>
+  				<label><input type="radio" name="radio" value="rubb"> Rubber</label>				
+				</fieldset>
+				<fieldset class="catalog-field">
+  				<legend class="catalog-legend">Features</legend>
+					<label><input type="checkbox" name="price_start" value="slid" checked> Slider</label>
+					<label><input type="checkbox" name="price_start" value="advant"> Advantege</label>
+					<label><input type="checkbox" name="price_start" value="news" checked> News</label>
+					<label><input type="checkbox" name="price_start" value="gallery"> Gallery</label>
+					<label><input type="checkbox" name="price_start" value="cart"> Cart</label>
+				</fieldset>
+				<button type="submit">Show</button>
+			</form>
+				<div class="header-filter">
+					<ul class="cart-filter">
+						<li><a href="#">Sort by:</a></li>
+						<li><a href="#">price</a></li>
+						<li><a href="#">type</a></li>
+						<li><a href="#">functional</a></li>
+					</ul>
+					<img src="img/indicator.jpg" class="filter-indicator" alt="indicator" width="50" height="20">
+				</div>
+
+			<div class="catalog-cart">
+				<div class="catalog-single catalog-single_aviator">
+					<header class="catalog-cart_header">
+						<form action="post" class="catalog-form">
+							<input type="radio" name="radio" value="cch1">
+							<input type="radio" name="radio" value="cch2">
+							<input type="radio" name="radio" value="cch3">
+						</form>						
+					</header>
+					<main class="catalog-cart_main">
+						<div class="catalog-cart_price-form">
+							<span class="catalog-cart_price-title">Aviator</span>
+							<p class="catalog-cart_price-subs">Lorem ipsum dolor sit amet.</p>
+							<a href="#" class="catalog-cart_price-btn">10000 p.</a>
+						</div>
+					</main>
+				</div>
+			</div>
+
+			<div class="catalog-single catalog-single_sunset">
+					<header class="catalog-cart_header">
+						<form action="post" class="catalog-form">
+							<input type="radio" name="radio" value="cch1">
+							<input type="radio" name="radio" value="cch2">
+							<input type="radio" name="radio" value="cch3">
+						</form>						
+					</header>
+					<main class="catalog-cart_main">
+						<div class="catalog-cart_price-form">
+							<span class="catalog-cart_price-title">Sunset</span>
+							<p class="catalog-cart_price-subs">Lorem ipsum dolor sit amet.</p>
+							<a href="#" class="catalog-cart_price-btn">10000 p.</a>
+						</div>
+					</main>
+				</div>
+
+				<div class="catalog-single catalog-single_forte">
+					<header class="catalog-cart_header">
+						<form action="post" class="catalog-form">
+							<input type="radio" name="radio" value="cch1">
+							<input type="radio" name="radio" value="cch2">
+							<input type="radio" name="radio" value="cch3">
+						</form>						
+					</header>
+					<main class="catalog-cart_main">
+						<div class="catalog-cart_price-form">
+							<span class="catalog-cart_price-title">Forte</span>
+							<p class="catalog-cart_price-subs">Lorem ipsum dolor sit amet.</p>
+							<a href="#" class="catalog-cart_price-btn">10000 p.</a>
+						</div>
+					</main>
+				</div>
+				<div class="catalog-single catalog-single_modern">
+					<header class="catalog-cart_header">
+						<form action="post" class="catalog-form">
+							<input type="radio" name="radio" value="cch1">
+							<input type="radio" name="radio" value="cch2">
+							<input type="radio" name="radio" value="cch3">
+						</form>						
+					</header>
+					<main class="catalog-cart_main">
+						<div class="catalog-cart_price-form">
+							<span class="catalog-cart_price-title">Modern</span>
+							<p class="catalog-cart_price-subs">Lorem ipsum dolor sit amet.</p>
+							<a href="#" class="catalog-cart_price-btn">10000 p.</a>
+						</div>
+					</main>
+				</div>
+				<div class="catalog-single catalog-single_avenue">
+					<header class="catalog-cart_header">
+						<form action="post" class="catalog-form">
+							<input type="radio" name="radio" value="cch1">
+							<input type="radio" name="radio" value="cch2">
+							<input type="radio" name="radio" value="cch3">
+						</form>						
+					</header>
+					<main class="catalog-cart_main">
+						<div class="catalog-cart_price-form">
+							<span class="catalog-cart_price-title">Avenue</span>
+							<p class="catalog-cart_price-subs">Lorem ipsum dolor sit amet.</p>
+							<a href="#" class="catalog-cart_price-btn">10000 p.</a>
+						</div>
+					</main>
+				</div>
+				<div class="catalog-single catalog-single_dovetail">
+					<header class="catalog-cart_header">
+						<form action="post" class="catalog-form">
+							<input type="radio" name="radio" value="cch1">
+							<input type="radio" name="radio" value="cch2">
+							<input type="radio" name="radio" value="cch3">
+						</form>						
+					</header>
+					<main class="catalog-cart_main">
+						<div class="catalog-cart_price-form">
+							<span class="catalog-cart_price-title">Dovetail</span>
+							<p class="catalog-cart_price-subs">Lorem ipsum dolor sit amet.</p>
+							<a href="#" class="catalog-cart_price-btn">10000 p.</a>
+						</div>
+					</main>
+			</div>
+
+			<div class="paginator">
+	      <a  class="pag-btn pag-btn_prev" href="#prev">Prev</a>
+	      <a href="#1" class="pag-btn pag-btn_hide">1</a>
+	     	<a href="#2" class="pag-btn">2</a>
+	      <a href="#3" class="pag-btn">3</a>
+	      <a class="pag-btn pag-btn_next" href="#next">Next</a>
+    	</div>
+
+		</div>
+	</main>
+
+
+	<footer class="footer">
+		<section class="map">
+			<img class="map_image" src="img/map.jpg" alt="big map" width="1440" height="416">
+			<div class="container map_contacts">
+				<div class="contacts">
+					<p>Nerds design studio</p>
+					<p>Our adress: Moscow, Russia.<br>
+						Red palace, 1<br>
+					</p>
+					<p>Phone number: +35 1123 32 12</p>
+					<a href="#" class="btn">Write us!</a>
+				</div>
+			</div>
+		</section>
+		<div class="container">
+			<div class="footer-social">
+				<a href="#">VK</a>
+				<a href="#">FB</a>
+				<a href="#">Inst</a>
+			</div>
+			<div class="footer-discont">
+				<h2>Join us!</h2>
+				<p>Discount 10% for our friends from social</p>
+			</div>
+		</div>
+	</footer>
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
