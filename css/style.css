@@ -1,8 +1,10 @@
 
-.header-main{
-	background-color: #eeeeee;
+.main{
 	max-width: 1199px;
 	margin:auto;
+}
+.header-main{
+	background-color: #eeeeee;
 }
 
 .container{
@@ -16,7 +18,6 @@
 		margin-bottom:15px;
 	}
 .main-navigation_item{
-
 	margin-top:30px;
 	padding: 0;
 	display: flex;
@@ -56,7 +57,7 @@
 	background-color: #fb565a;
 	border-radius: 4px;
 	text-decoration: none;
-		text-transform: uppercase;
+	text-transform: uppercase;
 	color:white;
 }
 .btn:hover{
@@ -68,4 +69,15 @@
 .slider-text{
 	text-transform: none;
 	margin-bottom: 40px;
+}
+.main_items{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	padding:0;
+}
+.main_items-item{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
 }
