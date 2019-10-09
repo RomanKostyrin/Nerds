@@ -6,7 +6,6 @@
 .header-main{
 	background-color: #eeeeee;
 }
-
 .container{
 	display: flex;
 	justify-content: center;
@@ -26,7 +25,6 @@
 	align-items: center;
 	list-style: none;
 	text-transform: uppercase;
-
 }
 .logo__current{
 	padding-right: 110px;
@@ -82,4 +80,62 @@
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
+}
+.main_items-item > a{
+	margin-top:auto;
+}
+.main_items-item > p{
+	max-width: 200px;
+}
+.about_us{
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.about_us-left{
+	width:50%;
+	padding-right: 100px;
+}
+.main_items-about_us{
+	justify-content: space-around;
+}
+.about_us-title_span{
+	font-size: 35px;
+}
+.main-customers{
+	padding: 50px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contacts{
+	position:absolute;
+	z-index: 10;
+	top:100px;
+	left: 100px;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 20px;
+	width: 200px;
+	background-color: #eeeeee;
+}
+.btn-contacts{
+
+	width:100px;
+}
+.container_footer{
+
+	border: 1px solid black;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin:auto;
+}
+.map{
+	position: relative;	
+	display: flex;
+	justify-content: center;
+	
+
 }
