@@ -31,18 +31,32 @@ body{
 	color: #3f3f3f;
 	text-decoration: none;
 }
-.nav__list a:hover{
+.nav__link:hover{
 	color: #fb565a;
 }
-.nav__list a:active{
-	color: #a1a1a1;
-}
-.nav__list li:last-child{
-	text-transform: uppercase;
-	padding-left:95px;
+.nav__link:active{
+	color: #8f8f8f;
 }
 .nav__link--active{
 	border-bottom:2px solid #fb565a;
+}
+.nav__link--cart{
+	position: relative;
+	padding-left:25px;
+	margin-left: 100px;
+}
+.cart__svg{
+	position:absolute;
+	display: inline-block;
+	top:-5px;
+	left:0;
+	fill: #a6a6a6;
+}
+.nav__link:hover .cart__svg{
+	fill: #fb565a;
+}
+.nav__link:active .cart__svg{
+	fill: #cbcbcb;
 }
 .slider{
 	background-color: #eeeeee;
@@ -77,6 +91,7 @@ body{
 	background-color: #d6494d;
 }
 .btn:active{
+	box-shadow: inset 0  3px 1px 0 #9b2d30;
 	background-color: #b63538;
 }
 .btn--app{
@@ -86,6 +101,7 @@ body{
 	background-color: #01a25e;
 }
 .btn--app:active{
+	box-shadow: inset 0  3px 1px 0 #007b47;
 	background-color: #009053;
 }
 .btn--present{
@@ -95,6 +111,7 @@ body{
 	background-color: #d6ae2c;
 }
 .btn--present:active{
+	box-shadow: inset 0  3px 1px 0 #a3841f;
 	background-color: #c09b24;
 }
 .btn--slider{
@@ -249,12 +266,15 @@ margin-left: 30px;
 	background: #fb565a url("../img/insta.svg") no-repeat center;
 }
 .social-btn__vk:active{
+	box-shadow: inset 0  3px 3px 0 #b63e42;
 	background: #d6494d url("../img/vk.svg") no-repeat center;
 }
 .social-btn__fb:active{
+	box-shadow: inset 0  3px 3px 0 #b63e42;
 	background: #d6494d url("../img/fb.svg") no-repeat center;
 }
 .social-btn__inst:active{
+	box-shadow: inset 0  3px 3px 0 #b63e42;
 	background: #d6494d url("../img/insta.svg") no-repeat center;
 }
 .social-btn__vk{
