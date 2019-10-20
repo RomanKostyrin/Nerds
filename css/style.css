@@ -433,3 +433,68 @@ background: #e1e1e1 url("../img/insta.svg") no-repeat center;
 	left:50%;
 	position: absolute;
 }
+
+/*catalog*/
+
+.welcome-header{
+	background-color: #eeeeee;
+	padding: 10px 160px 62px 160px;
+	display: flex;
+	justify-content: center;
+}
+.welcome-header h1{
+	font-size: 40px;
+	line-height: 40px;
+	text-transform: uppercase;
+}
+.catalog{
+	padding: 10px 160px 62px 160px;
+	margin-top: 80px;
+	display: flex;
+	justify-content: space-between;
+}
+.catalog__main{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.catalog__form{
+	width: 220px;
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	border:2px solid black;
+	min-height: 1285px;
+}
+.catalog__range{
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+.catalog__price input[type="text"]{
+	background: #f1f1f1;
+	border:none;
+	border-radius: 5px;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	width:45px;
+	padding: 9px 5px;
+	text-align: center;
+	margin-left:5px;
+	margin-bottom: 50px;
+}
+.catalog__grid label{
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: none;
+	padding-left: 30px;
+}
+.catalog__radio{
+	margin-top: 20px;
+}
+.catalog__form fieldset{
+	padding:0;
+	margin:0;
+	border: none;
+}

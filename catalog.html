@@ -4,212 +4,153 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Nerds catalog</title>
+	<title>Nerds</title>
 </head>
 <body>
-	<header class="header-main">
-		<div class="container">
-			<div class="head-top">			
-				<nav class="main-navigation">
-					<ul>
-						<li>
-							<a class="logo logo__current" href="index.html">
-								<img class="logo__image" src="img/logo.jpg" alt="logo" width="100" height="100">
-							</a>
-						</li>
-						<li><a href="#">Studio</a></li>
-						<li><a href="#">Clients</a></li>
-						<li><a href="#">Catalog</a></li>
-						<li><a href="#">Contacts</a></li>
-					</ul>
-				</nav>
-				<div class="head-cart">
-					<a href="#" class="cart">Cart</a>
-				</div>			
-			</div>	
-			<h1 class=head-title_text>Weclome to our market</h1>
+	<header class="header">
+		<div class="header__logo logo">
+			<img class="logo__img" src="img/logo-slider-nerds.png" alt="logo" width="139" height="56">
 		</div>
+		<nav class="header__navigation nav">
+			<ul class="nav__list">
+				<li><a href="#" class="nav__link">Studio</a></li>
+				<li><a href="#" class="nav__link">Clients</a></li>
+				<li><a href="catalog.html" class="nav__link">Catalog</a></li>
+				<li><a href="#" class="nav__link">Contacts</a></li>
+				<li class="nav__cart">							
+					<a href="#" class="nav__link nav__link--cart">
+						<div class="cart__svg">		
+							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+							<g><circle cx="4.5" cy="13.5" r="1.5"/>
+								<circle cx="12.5" cy="13.5" r="1.5"/>
+								<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/></g>
+							</svg>
+						</div>
+					Cart
+					</a>
+				</li>
+			</ul>
+		</nav>		
 	</header>
-
-
-	<main class="main">	
-
-		<div class="container">
-			<form action="post" class="catalog-form">
-				<fieldset class="catalog-field">
-  				<legend class="catalog-legend">Price</legend>
-					<input type="range" id="range-price" name="range-price" min="0" max="25000" step="1000">
-					<label>from <input type="text" name="price_start"></label>
-					<label>to <input type="text" name="price_end"></label>
-				</fieldset>
-				<fieldset class="catalog-field">
-  				<legend class="catalog-legend">Form</legend>
-  				<label><input type="radio" name="radio" value="adapt"> Adaptive</label>
-  				<label><input type="radio" name="radio" value="fixed"> Fixed</label>
-  				<label><input type="radio" name="radio" value="rubb"> Rubber</label>				
-				</fieldset>
-				<fieldset class="catalog-field">
-  				<legend class="catalog-legend">Features</legend>
-					<label><input type="checkbox" name="price_start" value="slid" checked> Slider</label>
-					<label><input type="checkbox" name="price_start" value="advant"> Advantege</label>
-					<label><input type="checkbox" name="price_start" value="news" checked> News</label>
-					<label><input type="checkbox" name="price_start" value="gallery"> Gallery</label>
-					<label><input type="checkbox" name="price_start" value="cart"> Cart</label>
-				</fieldset>
-				<button type="submit">Show</button>
-			</form>
-				<div class="header-filter">
-					<ul class="cart-filter">
-						<li><a href="#">Sort by:</a></li>
-						<li><a href="#">price</a></li>
-						<li><a href="#">type</a></li>
-						<li><a href="#">functional</a></li>
-					</ul>
-					<img src="img/indicator.jpg" class="filter-indicator" alt="indicator" width="50" height="20">
-				</div>
-
-			<div class="catalog-cart">
-				<div class="catalog-single catalog-single_aviator">
-					<header class="catalog-cart_header">
-						<form action="post" class="catalog-form">
-							<input type="radio" name="radio" value="cch1">
-							<input type="radio" name="radio" value="cch2">
-							<input type="radio" name="radio" value="cch3">
-						</form>						
-					</header>
-					<main class="catalog-cart_main">
-						<div class="catalog-cart_price-form">
-							<span class="catalog-cart_price-title">Aviator</span>
-							<p class="catalog-cart_price-subs">Lorem ipsum dolor sit amet.</p>
-							<a href="#" class="catalog-cart_price-btn">10000 p.</a>
-						</div>
-					</main>
-				</div>
-			</div>
-
-			<div class="catalog-single catalog-single_sunset">
-					<header class="catalog-cart_header">
-						<form action="post" class="catalog-form">
-							<input type="radio" name="radio" value="cch1">
-							<input type="radio" name="radio" value="cch2">
-							<input type="radio" name="radio" value="cch3">
-						</form>						
-					</header>
-					<main class="catalog-cart_main">
-						<div class="catalog-cart_price-form">
-							<span class="catalog-cart_price-title">Sunset</span>
-							<p class="catalog-cart_price-subs">Lorem ipsum dolor sit amet.</p>
-							<a href="#" class="catalog-cart_price-btn">10000 p.</a>
-						</div>
-					</main>
-				</div>
-
-				<div class="catalog-single catalog-single_forte">
-					<header class="catalog-cart_header">
-						<form action="post" class="catalog-form">
-							<input type="radio" name="radio" value="cch1">
-							<input type="radio" name="radio" value="cch2">
-							<input type="radio" name="radio" value="cch3">
-						</form>						
-					</header>
-					<main class="catalog-cart_main">
-						<div class="catalog-cart_price-form">
-							<span class="catalog-cart_price-title">Forte</span>
-							<p class="catalog-cart_price-subs">Lorem ipsum dolor sit amet.</p>
-							<a href="#" class="catalog-cart_price-btn">10000 p.</a>
-						</div>
-					</main>
-				</div>
-				<div class="catalog-single catalog-single_modern">
-					<header class="catalog-cart_header">
-						<form action="post" class="catalog-form">
-							<input type="radio" name="radio" value="cch1">
-							<input type="radio" name="radio" value="cch2">
-							<input type="radio" name="radio" value="cch3">
-						</form>						
-					</header>
-					<main class="catalog-cart_main">
-						<div class="catalog-cart_price-form">
-							<span class="catalog-cart_price-title">Modern</span>
-							<p class="catalog-cart_price-subs">Lorem ipsum dolor sit amet.</p>
-							<a href="#" class="catalog-cart_price-btn">10000 p.</a>
-						</div>
-					</main>
-				</div>
-				<div class="catalog-single catalog-single_avenue">
-					<header class="catalog-cart_header">
-						<form action="post" class="catalog-form">
-							<input type="radio" name="radio" value="cch1">
-							<input type="radio" name="radio" value="cch2">
-							<input type="radio" name="radio" value="cch3">
-						</form>						
-					</header>
-					<main class="catalog-cart_main">
-						<div class="catalog-cart_price-form">
-							<span class="catalog-cart_price-title">Avenue</span>
-							<p class="catalog-cart_price-subs">Lorem ipsum dolor sit amet.</p>
-							<a href="#" class="catalog-cart_price-btn">10000 p.</a>
-						</div>
-					</main>
-				</div>
-				<div class="catalog-single catalog-single_dovetail">
-					<header class="catalog-cart_header">
-						<form action="post" class="catalog-form">
-							<input type="radio" name="radio" value="cch1">
-							<input type="radio" name="radio" value="cch2">
-							<input type="radio" name="radio" value="cch3">
-						</form>						
-					</header>
-					<main class="catalog-cart_main">
-						<div class="catalog-cart_price-form">
-							<span class="catalog-cart_price-title">Dovetail</span>
-							<p class="catalog-cart_price-subs">Lorem ipsum dolor sit amet.</p>
-							<a href="#" class="catalog-cart_price-btn">10000 p.</a>
-						</div>
-					</main>
-			</div>
-
-			<div class="paginator">
-	      <a  class="pag-btn pag-btn_prev" href="#prev">Prev</a>
-	      <a href="#1" class="pag-btn pag-btn_hide">1</a>
-	     	<a href="#2" class="pag-btn">2</a>
-	      <a href="#3" class="pag-btn">3</a>
-	      <a class="pag-btn pag-btn_next" href="#next">Next</a>
-    	</div>
-
+		
+	<main class="main">
+		<div class="welcome-header">
+			<h1>Welcome to our makets store</h1>
 		</div>
-	</main>
 
-
-	<footer class="footer">
-		<section class="map">
-			<img class="map_image" src="img/map.jpg" alt="big map" width="1440" height="416">
-			<div class="container map_contacts">
-				<div class="contacts">
-					<p>Nerds design studio</p>
-					<p>Our adress: Moscow, Russia.<br>
-						Red palace, 1<br>
-					</p>
-					<p>Phone number: +35 1123 32 12</p>
-					<a href="#" class="btn">Write us!</a>
+		<div class="catalog" action="https://echo.romankostyrin.github.io/Nerds" method="post" oninput="daysoutput.value=dayscount.value">
+			<form class="catalog__form">
+				<fieldset  class="catalog__price">
+					<legend>Price:</legend>
+						<input type="range" min="0" max="15000" step="1000" class="catalog__range">
+					</label>
+					<label>
+						From:
+						<input type="text" value="1">
+					</label>				
+					<label>
+						To:
+						<input type="text" value="15000">
+					</label>
+				</fieldset>
+				<div class="catalog__grid">
+					<fieldset>
+						<legend>Grid:</legend>
+						<label>
+							<input class="catalog__radio" type="radio" name="grid__item" value="1" id="radio-1" checked>
+							Adaptive<br>
+						</label>
+						<label>
+							<input class="catalog__radio" type="radio" name="grid__item" value="2" id="radio-2">
+							Fixed<br>
+						</label>
+							<label>
+							<input class="catalog__radio" type="radio" name="grid__item" value="3" id="radio-3">
+							Robber
+						</label>
+					</fieldset>					
 				</div>
+				<div class="catalog__features">
+					<label>
+						Features:
+					</label>
+				</div>
+			</form>
+
+
+
+			<div class="catalog__main">
+				<div class="catalog__sort">
+					<ul>
+						<li>Sort by:</li>
+						<li><a href="#" class="sort__link">price</a></li>
+						<li><a href="#" class="sort__link">type</a></li>
+						<li><a href="#" class="sort__link">functional</a></li>
+						<li><img src="" alt="up or down"></li>					
+					</ul>
+				</div>
+				<div class="catalog__list">
+					<section class="catalog__item">
+						<figure>
+							
+						</figure>
+					</section>
+
+				</div>
+				<div class="catalog__pages">
+					1 2 3 next
+				</div>
+			</div>
+		</div>
+	
+
+
+
+
+		<section class="map">
+			<img class="map-image" src="img/img-map.jpg" alt="big map" width="1199" height="416">
+			<div class="map__contacts">
+				<b>Nerds design studio</b>
+				<p>Our adress: Moscow, Russia.<br>
+					Red palace, 1<br>
+				</p>
+				<p>Phone number: +35 1123 32</p>
+				<a href="#" class="btn btn--init-popup">Write us!</a>				
 			</div>
 		</section>
-		<div class="container">
-			<div class="footer-social">
-				<a href="#">VK</a>
-				<a href="#">FB</a>
-				<a href="#">Inst</a>
-			</div>
-			<div class="footer-discont">
-				<h2>Join us!</h2>
-				<p>Discount 10% for our friends from social</p>
-			</div>
+	</main>
+	<footer class="footer">		
+		<div class="footer__social">
+			<a href="#" class="social-btn social-btn__vk">VK</a>
+			<a href="#" class="social-btn social-btn__fb">FB</a>
+			<a href="#" class="social-btn social-btn__inst">Inst</a>
+		</div>
+		<div class="footer__discount">
+			<h2>Join us!</h2>
+			<p>Discount 10% for our friends from social</p>
 		</div>
 	</footer>
-
+	<div class="popup">
+		<button class="popup__btn" type="button" title="close">Close</button>
+		<form action="https://echo.romankostyrin.github.io/Nerds" method="post" class="write-us__form">
+			<label class="popup__lable--name">Your name:<br>
+				<input type="text" class="write-us__name" name="login" placeholder="your name, please">
+			</label>
+			<label class="popup__lable--email">Your e-mail:<br>
+				<input type="text" class="write-us__email" name="email" placeholder="for our answer">	
+			</label>
+			<label class="popup__lable--textarea">Your text:<br>
+				<textarea class="popup__textarea" name="comment" rows="5"  placeholder="Any text"></textarea>
+			</label>
+			<button class="btn btn--popup" type="submit">Send</button>
+		</form>
+	</div>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script src="js/script.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
