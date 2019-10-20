@@ -118,7 +118,7 @@
 					Red palace, 1<br>
 				</p>
 				<p>Phone number: +35 1123 32</p>
-				<a href="#" class="btn">Write us!</a>
+				<a href="#" class="btn">Write us!</a>				
 			</div>
 		</section>
 	</main>
@@ -128,11 +128,26 @@
 			<a href="#" class="social-btn social-btn__fb">FB</a>
 			<a href="#" class="social-btn social-btn__inst">Inst</a>
 		</div>
-		<div class="footer-discont">
+		<div class="footer__discount">
 			<h2>Join us!</h2>
 			<p>Discount 10% for our friends from social</p>
 		</div>
 	</footer>
+	<div class="popup">
+		<button class="popup__btn" type="button" title="close">Close</button>
+		<form action="https://echo.romankostyrin.github.io/Nerds" method="post" class="write-us__form">
+			<label class="popup__lable--name">Your name:<br>
+				<input type="text" class="write-us__name" name="login" placeholder="your name, please">
+			</label>
+			<label class="popup__lable--email">Your e-mail:<br>
+				<input type="text" class="write-us__email" name="email" placeholder="for our answer">	
+			</label>
+			<label class="popup__lable--textarea">Your text:<br>
+				<textarea class="popup__textarea" name="comment" rows="5"  placeholder="Any text"></textarea>
+			</label>
+			<button class="btn btn--popup" type="submit">Send</button>
+		</form>
+	</div>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
