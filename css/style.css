@@ -299,9 +299,10 @@ background: #e1e1e1 url("../img/insta.svg") no-repeat center;
 	margin-top:0;
 }
 .popup{
+	z-index: 30;
 	display: none;
-	position: absolute;
-	top:150px;
+	position: fixed;
+	top:250px;
 	left:50%;
 	width: 460px;
 	height: 316px;
@@ -361,12 +362,11 @@ background: #e1e1e1 url("../img/insta.svg") no-repeat center;
 	margin-top:28px;
 }
 .popup__textarea{
-box-sizing: border-box;
-width:100%;
-resize:none;
+	box-sizing: border-box;
+	width:100%;
+	resize:none;
 }
 .write-us__form{	
-	display: 
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: bold;
@@ -394,4 +394,22 @@ resize:none;
 .write-us__form input[type="text"]:hover,
 .write-us__form textarea:hover{
 	border:2px solid #a2a9ac;	
+}
+.popup--show{
+	display: block;
+	animation: bounce 0.6s;
+}
+@keyframes bounce {
+0% { transform: translateY(2000px); }
+70% { transform: translateY(-30px); }
+90% { transform: translateY(10px); }
+100% { transform: translateY(0); }
+}
+@keyframes shake {
+0%, 100% { transform: translateX(0); }
+10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
+20%, 40%, 60%, 80% { transform: translateX(2px); }
+}
+.popup--error{
+	animation: shake 0.3s;
 }
