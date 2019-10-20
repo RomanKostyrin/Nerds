@@ -64,6 +64,15 @@ body{
 	display: flex;
 	justify-content: space-between;
 }
+.slider-1{
+	display: none;
+}
+.slider-2{
+	display: none;
+}
+.slider-3{
+	display: none;
+}
 .slider__left h2{
 	margin-top:20px;
 	margin-bottom:18px;
@@ -412,4 +421,15 @@ background: #e1e1e1 url("../img/insta.svg") no-repeat center;
 }
 .popup--error{
 	animation: shake 0.3s;
+}
+.slider--show{
+	display: flex;
+}
+.sliders{
+	position: relative;
+}
+.slider-form__radio{
+	bottom:30%;
+	left:50%;
+	position: absolute;
 }
