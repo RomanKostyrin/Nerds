@@ -43,8 +43,7 @@
 		<div class="welcome-header">
 			<h1>Welcome to our makets store</h1>
 		</div>
-
-		<div class="catalog" action="https://echo.romankostyrin.github.io/Nerds" method="post" oninput="daysoutput.value=dayscount.value">
+		<div class="catalog">
 			<form class="catalog__form">
 				<fieldset  class="catalog__price">
 					<legend>Price:</legend>
@@ -113,32 +112,78 @@
 
 			<div class="catalog__main">
 				<div class="catalog__sort">
-					<ul>
+					<ul class="catalog__header">
 						<li>Sort by:</li>
-						<li><a href="#" class="sort__link">price</a></li>
-						<li><a href="#" class="sort__link">type</a></li>
-						<li><a href="#" class="sort__link">functional</a></li>
-						<li><img src="" alt="up or down"></li>					
+						<li><a href="#" class="choised">price</a></li>
+						<li><a href="#">type</a></li>
+						<li><a href="#">functional</a></li>
+					</ul>
+					<ul class="catalog__direction">
+						<li><a href="#">
+							<span class="direction-choised">down </span>
+						</a></li>
+						<li><a href="#" class="choised">
+							<span>up</span>
+						</a></li>					
 					</ul>
 				</div>
-				<div class="catalog__list">
-					<section class="catalog__item">
-						<figure>
-							
-						</figure>
-					</section>
-
-				</div>
-				<div class="catalog__pages">
+				<ul class="catalog__list">
+					<li class="catalog__item">
+						<img src="img/img-sedona.jpg" alt="sedona" width="360" height="576">
+							<form class="catalog__info">
+								<a href="#" class="catalog__link">Sedona</a>
+								<p>Information site for tourists</p>
+								<a href="#" class="btn">100 $</a>
+						</form>
+					</li>
+					<li class="catalog__item">
+						<img src="img/img-aplus.jpg" alt="sedona" width="360" height="576">
+							<form class="catalog__info">
+								<a href="#" class="catalog__link">Aplus</a>
+								<p>Information site for tourists</p>
+								<a href="#" class="btn">100 $</a>
+						</form>
+					</li>
+					<li class="catalog__item">
+						<img src="img/img-barbershop.jpg" alt="sedona" width="360" height="576">
+							<form class="catalog__info">
+								<a href="#" class="catalog__link">Barbershop</a>
+								<p>Information site for tourists</p>
+								<a href="#" class="btn">100 $</a>
+						</form>
+					</li>
+					<li class="catalog__item">
+						<img src="img/img-kvast.jpg" alt="sedona" width="360" height="576">
+							<form class="catalog__info">
+								<a href="#" class="catalog__link">Kvast</a>
+								<p>Information site for tourists</p>
+								<a href="#" class="btn">100 $</a>
+						</form>
+					</li>
+					<li class="catalog__item">
+						<img src="img/img-mishka.jpg" alt="sedona" width="360" height="576">
+							<form class="catalog__info">
+								<a href="#" class="catalog__link">Mishka</a>
+								<p>Information site for tourists</p>
+								<a href="#" class="btn">100 $</a>
+						</form>
+					</li>
+					<li class="catalog__item">
+						<img src="img/img-pink.jpg" alt="sedona" width="360" height="576">
+							<form class="catalog__info">
+								<a href="#" class="catalog__link">Pink</a>
+								<p>Information site for tourists</p>
+								<a href="#" class="btn">100 $</a>
+						</form>
+					</li>
+				</ul>
+				<div class="catalog__pages"><br>
 					1 2 3 next
 				</div>
 			</div>
+
+
 		</div>
-	
-
-
-
-
 		<section class="map">
 			<img class="map-image" src="img/img-map.jpg" alt="big map" width="1199" height="416">
 			<div class="map__contacts">
