@@ -698,3 +698,32 @@ input[type="radio"]:disabled + .radio--style{
 .catalog__item:hover .catalog__info {
 	display: flex;
 }
+.direction__item--up,
+.direction__item--down {
+	font-size: 0;
+}
+.direction--up,
+.direction--down {
+  padding: 0;
+  padding-left:10px;
+  position: relative;
+}
+.direction__item--up::after,
+.direction__item--down::after {
+  content: ''; 
+  position: absolute;
+  right: 0; 
+  top: 5px; 
+  border: 6px solid transparent;
+  border-top: 10px solid #c1c1c1; 
+}
+.direction--down  .direction__item--down::after {
+	border-top: none; 
+  border-bottom: 10px solid #c1c1c1; 
+}
+.direction--choised  .direction__item--up::after {
+	border-top: 10px solid #00ca74;
+}
+.direction--choised  .direction__item--down::after {
+	border-bottom: 10px solid #00ca74;
+}
