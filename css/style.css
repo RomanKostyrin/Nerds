@@ -140,6 +140,16 @@ body{
 	min-height: 380px;
 	border-bottom: 2px solid #eeeeee;
 }
+.main-items__item {
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+.main-items__item a {
+	margin-top: auto;
+}
 .main-items__item h3{
 	max-width: 240px;
 	font-size: 18px;
@@ -642,7 +652,7 @@ input[type="radio"]:disabled + .radio--style{
 	padding-top: 40px;
 	width: 360px;
 	height: 576px;
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 }
 .catalog__item::before {
 	content: "";
