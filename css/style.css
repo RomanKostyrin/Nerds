@@ -727,3 +727,29 @@ input[type="radio"]:disabled + .radio--style{
 .direction--choised  .direction__item--down::after {
 	border-bottom: 10px solid #00ca74;
 }
+.btn__pages,
+.btn__num {
+	background: #f1f1f1;
+	color:#000000;
+	font-weight: bold;
+	cursor: pointer;
+}
+.btn__num{
+	padding: 10px 15px;
+}
+.catalog__pages button[type="button"]:disabled{
+	border: 2px solid #f1f1f1;
+	background: none;
+	padding: 8px 13px;
+	cursor: default;
+}
+.btn__num:hover,
+.btn__pages:hover{
+	background: #e5e5e5;
+}
+.btn__num:active,
+.btn__pages:active{
+	box-shadow: inset 0  3px 1px 0 #b5b5b5;
+	background: #d5d5d5;
+	outline:0;
+}
